@@ -12,7 +12,7 @@ func main() {
 
 	r.LoadHTMLGlob("templates/*")
 
-	r.GET("/", routesindexHandler)
+	r.GET("/", routes.indexHandler)
 
 	r.Run(":5000")
 }
