@@ -1,9 +1,7 @@
 package main
 
 import (
-	"net/http"
-
-	"github.com/SmokierLemur51/foodforest/routes"
+	"github.com/SmokierLemur51/munchmania/routes"
 	"github.com/gin-gonic/gin"
 )
 
@@ -12,7 +10,7 @@ func main() {
 
 	r.LoadHTMLGlob("templates/*")
 
-	r.GET("/", routes.indexHandler)
+	r.GET("/", routes.IndexHandler)
 
 	r.Run(":5000")
 }

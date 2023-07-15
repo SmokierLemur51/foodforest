@@ -1,13 +1,14 @@
 package routes
 
 import (
+	"net/http"
 	"github.com/gin-gonic/gin"
 )
 
 
 
-func indexHandler(c *gin.Context) {
+func IndexHandler(c *gin.Context) {
 	c.HTML(http.StatusOK, "index.html", gin.H{
-		"title": "Food Forest"
+		"title": "Food Forest",
 	})
 }
